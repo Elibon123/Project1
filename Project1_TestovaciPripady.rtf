@@ -1,0 +1,245 @@
+{\rtf1\ansi\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset238 Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs28\lang9 Seznam testovac\'edch p\f1\'f8\f0\'edpad\f1\'f9:\f0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Pro ka\f1\'9edou funkci (\b hlavni_menu, pridat_ukol, zobrazit_ukoly, odstranit_ukol\b0 ) vytvo\'f8te samostatnou sadu testovac\f0\'edch p\f1\'f8\f0\'edpad\f1\'f9.\par
+{\pntext\f2\'B7\tab}Popi\'9ate konkr\f0\'e9tn\'ed kroky testov\'e1n\'ed, o\f1\'e8ek\f0\'e1van\'e9 v\'fdsledky a situace, kter\'e9 by mohly nastat (nap\f1\'f8. chybov\f0\'e9 stavy).\par
+
+\pard\sa200\sl276\slmult1\par
+\b Pokryt\'ed r\f1\'f9zn\f0\'fdch typ\f1\'f9 test\'f9:\f0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Pozitivn\'ed testy: \b0 Situace, kdy je funkce pou\f1\'9eita spr\f0\'e1vn\f1\'ec (nap\'f8. p\'f8id\f0\'e1n\'ed \'fakolu s platn\'fdmi vstupy).\par
+{\pntext\f2\'B7\tab}\b Negativn\'ed testy: \b0 Situace, kdy u\f1\'9eivatel zad\f0\'e1 neplatn\'e9 nebo ne\'fapln\'e9 \'fadaje (nap\f1\'f8. pr\f0\'e1zdn\'fd n\'e1zev \'fakolu).\par
+{\pntext\f2\'B7\tab}\b Hrani\f1\'e8n\f0\'ed p\f1\'f8\f0\'edpady: \b0 Nap\f1\'f8\f0\'edklad p\f1\'f8id\f0\'e1n\'ed prvn\'edho \'fakolu, zobrazen\'ed pr\'e1zdn\'e9ho seznamu, odstran\f1\'ecn\f0\'ed posledn\'edho \'fakolu.\par
+
+\pard\sa200\sl276\slmult1\par
+Funkci \b hlavni_menu\b0\par
+TC01: V\'fdb\f1\'ecr platn\f0\'e9 mo\f1\'9enosti z menu\f0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Popis: Ov\f1\'ec\'f8en\f0\'ed, \f1\'9ee volba \'e8\f0\'edsla 1 v hlavn\'edm menu spr\'e1vn\f1\'ec spust\f0\'ed funkci pridat_ukol\par
+{\pntext\f2\'B7\tab}Vstupn\'ed podm\'ednky: Program zobrazuje hlavn\'ed menu.\par
+{\pntext\f2\'B7\tab}Kroky testu: \par
+
+\pard\sa200\sl276\slmult1\tab 1. Spus\f1\'9dte program.\par
+\f0\lang1033\tab\f1\lang9 2. Ov\'ec\'f8te, \'9ee se zobrazuje hlavn\f0\'ed menu s nab\'eddkou voleb (nap\f1\'f8. "1 - \f0\lang1033\tab\f1\lang9 P\'f8idat \f0\'fakol", "2 - Zobrazit \'fakoly" atd.).\par
+ \tab 3. Zadejte \f1\'e8\f0\'edslo 1 a potvr\f1\'efte stisknut\f0\'edm kl\'e1vesy Enter.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 O\f1\'e8ek\f0\'e1van\'fd v\'fdsledek: Program spust\'ed funkci pridat_ukol().\par
+{\pntext\f2\'B7\tab}Skute\f1\'e8n\f0\'fd v\'fdsledek: Funkce pridat_ukol() byla spu\f1\'9at\'ecna a program zobrazil v\f0\'fdzvu k zad\'e1n\'ed nov\'e9ho \'fakolu\par
+{\pntext\f2\'B7\tab}Stav: Pass\par
+{\pntext\f2\'B7\tab}Pozn\'e1mky: Tento p\f1\'f8\f0\'edpad je d\f1\'f9le\'9eit\f0\'fd, proto\f1\'9ee ov\'ec\'f8uje z\f0\'e1kladn\'ed navigaci z hlavn\'edho menu a funk\f1\'e8nost jedn\f0\'e9 z kl\'ed\f1\'e8ov\f0\'fdch funkc\'ed programu.\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1 TC02: V\'fdb\f1\'ecr \f0\lang1033 ne\f1\lang9 platn\f0\'e9 mo\f1\'9enosti z menu\f0\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Popis: Ov\f1\'ec\'f8en\f0\'ed, \f1\'9ee volba \'e8\f0\'edsla 5 v hlavn\'edm menu upozorni o neplatnou volbu a necha uzivatele opakovat volbu znova\par
+{\pntext\f2\'B7\tab}Vstupn\'ed podm\'ednky: Program zobrazuje hlavn\'ed menu.\par
+{\pntext\f2\'B7\tab}Kroky testu: \par
+
+\pard\sa200\sl276\slmult1\tab 1. Spus\f1\'9dte program.\par
+\f0\lang1033\tab\f1\lang9 2. Ov\'ec\'f8te, \'9ee se zobrazuje hlavn\f0\'ed menu s nab\'eddkou voleb (nap\f1\'f8. "1 - \f0\lang1033\tab\f1\lang9 P\'f8idat \f0\'fakol", "2 - Zobrazit \'fakoly" atd.).\par
+ \tab 3. Zadejte \f1\'e8\f0\'edslo 5 a potvr\f1\'efte stisknut\f0\'edm kl\'e1vesy Enter.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 O\f1\'e8ek\f0\'e1van\'fd v\'fdsledek: Program zobrazi Neplatnou volbu. Vyberte moznost (1-4):\par
+{\pntext\f2\'B7\tab}Skute\f1\'e8n\f0\'fd v\'fdsledek: Program upozornil o neplatnou volbu a nechal uzivatele opakovane vybrat moznost (1-4)\par
+{\pntext\f2\'B7\tab}Stav: Pass\par
+{\pntext\f2\'B7\tab}Pozn\'e1mky: Tento p\f1\'f8\f0\'edpad je d\f1\'f9le\'9eit\f0\'fd, proto\f1\'9ee ov\'ec\'f8uje z\f0\'e1kladn\'ed navigaci z hlavn\'edho menu a pojistka hlavniho menu proti neplatni volby.\par
+
+\pard\sa200\sl276\slmult1\par
+TC03: V\'fdb\f1\'ecr \f0\lang1033 posledni moznost z menu - konec programu\lang9\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Popis: Ov\f1\'ec\'f8en\f0\'ed, \f1\'9ee volba \'e8\f0\'edsla 4 v hlavn\'edm menu ukonci programu.\par
+{\pntext\f2\'B7\tab}Vstupn\'ed podm\'ednky: Program zobrazuje hlavn\'ed menu.\par
+{\pntext\f2\'B7\tab}Kroky testu: \par
+
+\pard\sa200\sl276\slmult1\tab 1. Spus\f1\'9dte program.\par
+\f0\lang1033\tab\f1\lang9 2. Ov\'ec\'f8te, \'9ee se zobrazuje hlavn\f0\'ed menu s nab\'eddkou voleb (nap\f1\'f8. "1 - \f0\lang1033\tab\f1\lang9 P\'f8idat \f0\'fakol", "2 - Zobrazit \'fakoly" atd.).\par
+ \tab 3. Zadejte \f1\'e8\f0\'edslo 4 a potvr\f1\'efte stisknut\f0\'edm kl\'e1vesy Enter.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 O\f1\'e8ek\f0\'e1van\'fd v\'fdsledek: Program zobrazi Konec programu. a program se ukonci.\par
+{\pntext\f2\'B7\tab}Skute\f1\'e8n\f0\'fd v\'fdsledek: Program zobrazil "Konec programu." a se ukoncil.\par
+{\pntext\f2\'B7\tab}Stav: Pass\par
+{\pntext\f2\'B7\tab}Pozn\'e1mky: Tento p\f1\'f8\f0\'edpad je d\f1\'f9le\'9eit\f0\'fd, proto\f1\'9ee ov\'ec\'f8uje z\f0\'e1kladn\'ed navigaci z hlavn\'edho menu a ukonceni programu.\par
+
+\pard\sa200\sl276\slmult1\par
+Funkce \b pridat_ukol\b0\par
+TC01: Pridat ukol s platnimy vstupy\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Popis: \lang1033 overeni ze funkci prida do seznamu ukolu novy ukol\lang9\par
+{\pntext\f2\'B7\tab}Vstupn\'ed podm\'ednky: Funkce zobrazi "Zadejte nazev ukolu" a pak "Zadejte popis ukolu":\par
+{\pntext\f2\'B7\tab}Kroky testu: \par
+
+\pard\sa200\sl276\slmult1\tab 1. Spus\f1\'9dte program.\par
+\f0\lang1033\tab\f1\lang9 2. Ov\'ec\'f8te, \'9ee se zobrazuje hlavn\f0\'ed menu s nab\'eddkou voleb (nap\f1\'f8. "1 - \f0\lang1033\tab\f1\lang9 P\'f8idat \f0\'fakol", "2 - Zobrazit \'fakoly" atd.).\par
+ \tab 3. Zadejte \f1\'e8\f0\'edslo 1 a potvr\f1\'efte stisknut\f0\'edm kl\'e1vesy Enter.\par
+\tab 4. Overte ze se zobrazi "Zadejte nazev ukolu" \par
+\tab 5. Zadejte platny nazev\par
+\tab 6. Overte ze se zobrazi "Zadejte popis ukolu"\par
+\tab 7. Zadejte platny popis\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 O\f1\'e8ek\f0\'e1van\'fd v\'fdsledek: Funkci pridat_ukol() zobrazi "Ukol 'nazev ukolu' byl pridan!"\par
+{\pntext\f2\'B7\tab}Skute\f1\'e8n\f0\'fd v\'fdsledek: Funkce pridat_ukol() potvrdila pridani ukolu do seznam ukol\par
+{\pntext\f2\'B7\tab}Stav: Pass\par
+{\pntext\f2\'B7\tab}Pozn\'e1mky: Tento p\f1\'f8\f0\'edpad \f1 ov\'ec\'f8uje z\f0\'e1kladn\'ed funk\f1\'e8nost jedn\f0\'e9 z kl\'ed\f1\'e8ov\f0\'fdch funkc\'ed programu.\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1 TC02: Pridat ukol s neuplne udaje\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Popis: \lang1033 Overeni ze funkce zkontroluje zda nazev ukolu je prazdny\lang9\par
+{\pntext\f2\'B7\tab}Vstupn\'ed podm\'ednky: Funkce zobrazi "Zadejte nazev ukolu" a pak "Zadejte popis ukolu":\par
+{\pntext\f2\'B7\tab}Kroky testu: \par
+
+\pard\sa200\sl276\slmult1\tab 1. Spus\f1\'9dte program.\par
+\f0\lang1033\tab\f1\lang9 2. Ov\'ec\'f8te, \'9ee se zobrazuje hlavn\f0\'ed menu s nab\'eddkou voleb (nap\f1\'f8. "1 - \f0\lang1033\tab\f1\lang9 P\'f8idat \f0\'fakol", "2 - Zobrazit \'fakoly" atd.).\par
+ \tab 3. Zadejte \f1\'e8\f0\'edslo 1 a potvr\f1\'efte stisknut\f0\'edm kl\'e1vesy Enter.\par
+\tab 4. Overte ze se zobrazi "Zadejte nazev ukolu" \par
+\tab 5. Zadejte prazdny nazev\par
+\tab 6. Overte ze se zobrazi "Zadejte popis ukolu"\par
+\tab 7. Zadejte platny popis\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 O\f1\'e8ek\f0\'e1van\'fd v\'fdsledek: Funkci pridat_ukol() zobrazi "Zadan je prazdny nazev" a zopakuje "Zadejte nazev ukolu: "\par
+{\pntext\f2\'B7\tab}Skute\f1\'e8n\f0\'fd v\'fdsledek: Funkce pridat_ukol() upozorn\'edla u\f1\'9eivatele, \'9ee zadal pr\f0\'e1zdn\'fd vstup a nech\'e1la ho zadat n\'e1zev i popis znovu.\par
+{\pntext\f2\'B7\tab}Stav: Pass\par
+{\pntext\f2\'B7\tab}Pozn\'e1mky: Tento p\f1\'f8\f0\'edpad \lang1033 zajisti ze ukol s prazdny nazev nemuze byt vytvoren a  pridan k seznamu.\lang9\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1 TC03: Pridani dalsi ukol\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Popis: \lang1033 Overeni ze funkce pridat_ukol pokracuje v pridani dalsi ukoly\lang9\par
+{\pntext\f2\'B7\tab}Vstupn\'ed podm\'ednky: Funkce zobrazi "Zadejte nazev ukolu" a pak "Zadejte popis ukolu":\par
+{\pntext\f2\'B7\tab}Kroky testu: \par
+
+\pard\sa200\sl276\slmult1\tab 1. Spus\f1\'9dte program.\par
+\f0\lang1033\tab\f1\lang9 2. Ov\'ec\'f8te, \'9ee se zobrazuje hlavn\f0\'ed menu s nab\'eddkou voleb (nap\f1\'f8. "1 - \f0\lang1033\tab\f1\lang9 P\'f8idat \f0\'fakol", "2 - Zobrazit \'fakoly" atd.).\par
+ \tab 3. Zadejte \f1\'e8\f0\'edslo 1 a potvr\f1\'efte stisknut\f0\'edm kl\'e1vesy Enter.\par
+\tab 4. Overte ze se zobrazi "Zadejte nazev ukolu" \par
+\tab 5. Zadejte platny nazev\par
+\tab 6. Overte ze se zobrazi "Zadejte popis ukolu"\par
+\tab 7. Zadejte platny popis\par
+\tab 8.Overte ze se zobrazi "Ukol 'nazev1' byl pridan!"a program pokra\f1\'e8uje \f0\lang1033\tab\f1\lang9 d\f0\'e1l nab\'eddkou hlavn\'edho menu.\par
+\tab 9. Zadejte \f1\'e8\f0\'edslo 1 a potvr\f1\'efte stisknut\f0\'edm kl\'e1vesy Enter.\par
+\tab 10. Overte ze se zobrazi "Zadejte nazev ukolu" \par
+\tab 11. Zadejte platny nazev\par
+\tab 12. Overte ze se zobrazi "Zadejte popis ukolu"\par
+\tab 13. Zadejte platny popis\par
+\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 O\f1\'e8ek\f0\'e1van\'fd v\'fdsledek: Funkci pridat_ukol() zobrazi Ukol 'nazev2' byl pridan!" a program pokra\f1\'e8uje d\f0\'e1l nab\'eddkou hlavn\'edho menu.\par
+{\pntext\f2\'B7\tab}Skute\f1\'e8n\f0\'fd v\'fdsledek: Funkce pridat_ukol() zobrazila ze druhy ukol je pridan a ukazala uzivatele znova nabidku hlavniho menu.\par
+{\pntext\f2\'B7\tab}Stav: Pass\par
+{\pntext\f2\'B7\tab}Pozn\'e1mky: Tento p\f1\'f8\f0\'edpad \lang1033 zajisti ze zakladni funkce o pridany ukolu funguje opakovane.\lang9\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1 Funkce \b zobrazit_ukoly\b0\par
+TC01: Zobrazit ukol (nazev1, popis1) ktery byl pridan do seznamu\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Popis: \lang1033 overeni ze funkci zobrazi seznam ukolu a skutecne pridany ukol\lang9\par
+{\pntext\f2\'B7\tab}Vstupn\'ed podm\'ednky: Funkce zobrazi "Seznam ukolu:"\par
+{\pntext\f2\'B7\tab}Kroky testu: \par
+
+\pard\sa200\sl276\slmult1\tab 1. Spus\f1\'9dte program.\par
+\f0\lang1033\tab\f1\lang9 2. Ov\'ec\'f8te, \'9ee se zobrazuje hlavn\f0\'ed menu s nab\'eddkou voleb (nap\f1\'f8. "1 - \f0\lang1033\tab\f1\lang9 P\'f8idat \f0\'fakol", "2 - Zobrazit \'fakoly" atd.).\par
+ \tab 3. Zadejte \f1\'e8\f0\'edslo 2 a potvr\f1\'efte stisknut\f0\'edm kl\'e1vesy Enter.\par
+\tab 4. Overte ze se zobrazi "Seznam ukolu:" a skutecne poradi, nazev a \tab popis pridaneho ukolu\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 O\f1\'e8ek\f0\'e1van\'fd v\'fdsledek: Funkci zobrazit_ukoly() zobrazi Seznam ukolu:\par
+
+\pard\sa200\sl276\slmult1\tab 1. nazev1 - popis1\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Skute\f1\'e8n\f0\'fd v\'fdsledek: Funkce zobrazit_ukoly() ukazala seznam ukol vcetne pridany ukol\par
+{\pntext\f2\'B7\tab}Stav: Pass\par
+{\pntext\f2\'B7\tab}Pozn\'e1mky: Tento p\f1\'f8\f0\'edpad \f1 ov\'ec\'f8uje \f0 funk\f1\'e8nost \f0\lang1033 dve\lang9  z kl\'ed\f1\'e8ov\f0\'fdch funkc\'ed programu - 1. Ukol byl skutecne pridan do seznamu, 2. Seznam ukazuje spravne a uplne udaje pridaneho ukolu.\par
+
+\pard\sa200\sl276\slmult1\par
+TC02: Zobrazit prazdneho seznamu\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Popis: \lang1033 Overeni jestli funkce zobrazi prazdneho seznamu\lang9\par
+{\pntext\f2\'B7\tab}Vstupn\'ed podm\'ednky: Funkce 2. Zobrazit_ukoly se spusti\par
+{\pntext\f2\'B7\tab}Kroky testu: \par
+
+\pard\sa200\sl276\slmult1\tab 1. Spus\f1\'9dte program.\par
+\f0\lang1033\tab\f1\lang9 2. Ov\'ec\'f8te, \'9ee se zobrazuje hlavn\f0\'ed menu s nab\'eddkou voleb (nap\f1\'f8. "1 - \f0\lang1033\tab\f1\lang9 P\'f8idat \f0\'fakol", "2 - Zobrazit \'fakoly" atd.).\par
+ \tab 3. Zadejte \f1\'e8\f0\'edslo 2 a potvr\f1\'efte stisknut\f0\'edm kl\'e1vesy Enter.\par
+\tab 4. Overte zda funkce zobrazi neco\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 O\f1\'e8ek\f0\'e1van\'fd v\'fdsledek: Funkce zobrazit_ukoly() nezobrazi nic a nabidne hlavniho menu\par
+{\pntext\f2\'B7\tab}Skute\f1\'e8n\f0\'fd v\'fdsledek: Funkce nezobrazila nic a nenabidla hlavniho menu, program se zasekl\par
+{\pntext\f2\'B7\tab}Stav: Fail\par
+{\pntext\f2\'B7\tab}Pozn\'e1mky: Tento p\f1\'f8\f0\'edpad z\lang1033 jistil ze kdyz seznam ukolu je prazdny, funkce zobrazit_ukoly zastavuje programu.\lang9\par
+
+\pard\sa200\sl276\slmult1\par
+Funkce \b odstranit_ukol\b0\par
+TC01: Odstranit ukol 1.nazev1- popis1, ktery byl pridan do seznamu\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Popis: \lang1033 Overeni jestli funkce 3. odstranit_ukol odstrani pridany ukol ze seznamu\lang9\par
+{\pntext\f2\'B7\tab}Vstupn\'ed podm\'ednky: Funkce 3 odstranit_ukol zobrazi "Seznam ukolu:" a vsechny ulozene ukoly\par
+{\pntext\f2\'B7\tab}Kroky testu: \par
+
+\pard\sa200\sl276\slmult1\tab 1. Spus\f1\'9dte program.\par
+\f0\lang1033\tab\f1\lang9 2. Ov\'ec\'f8te, \'9ee se zobrazuje hlavn\f0\'ed menu s nab\'eddkou voleb (nap\f1\'f8. "1 - \f0\lang1033\tab\f1\lang9 P\'f8idat \f0\'fakol", "2 - Zobrazit \'fakoly" atd.).\par
+ \tab 3. Zadejte \f1\'e8\f0\'edslo 3 a potvr\f1\'efte stisknut\f0\'edm kl\'e1vesy Enter.\par
+\tab 4. Overte ze se zobrazi "Seznam ukolu:" a ukol 1.nazev1-popis1\par
+\tab 5.Overte ze se zobrazi "Zadejte cislo ukolu, ktery chcete odstranit: "\par
+\tab 6. Zadejte cislo 1.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 O\f1\'e8ek\f0\'e1van\'fd v\'fdsledek: Funkce zobrazi ze ukol nazev1 byl odstaranen. \par
+{\pntext\f2\'B7\tab}Skute\f1\'e8n\f0\'fd v\'fdsledek: Funkce odstranit_ukoly() ukazala ze ukol nazev1 je odstranen.\par
+{\pntext\f2\'B7\tab}Stav: Pass\par
+
+\pard\sa200\sl276\slmult1 Pozn\'e1mky: Tento p\f1\'f8\f0\'edpad \f1 ov\'ec\'f8uje \f0 funk\f1\'e8nost \f0\lang1033 odstraneni ukolu ktery byl pridan do seznamu.\par
+\lang9\par
+TC02: Odstranit posledni ukol v seznamu\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Popis: \lang1033 Overeni jestli funkce odstranit_ukol odstrani posledny ukol v seznamu\lang9\par
+{\pntext\f2\'B7\tab}Vstupn\'ed podm\'ednky: Funkce 3. Odstranit_ukol se spusti a zobrazi "Seznam ukolu:" a vsechny ulozene ukoly\par
+
+\pard\sa200\sl276\slmult1 Seznam ukolu:\par
+1. nazev1 - popis1\par
+2. nazev2 - popis2\par
+Zadejte cislo ukolu, ktery chcete odstranit:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Kroky testu: \par
+
+\pard\sa200\sl276\slmult1\tab 1. Spus\f1\'9dte program.\par
+\f0\lang1033\tab\f1\lang9 2. Ov\'ec\'f8te, \'9ee se zobrazuje hlavn\f0\'ed menu s nab\'eddkou voleb (nap\f1\'f8. "1 - \f0\lang1033\tab\f1\lang9 P\'f8idat \f0\'fakol", "2 - Zobrazit \'fakoly" atd.).\par
+ \tab 3. Zadejte \f1\'e8\f0\'edslo 3 a potvr\f1\'efte stisknut\f0\'edm kl\'e1vesy Enter.\par
+\tab 4. Overte zda funkce zobrazi seznam ukolu a ukol 1.nazev1-popis1, \tab ukol2.nazev2-popis2\par
+\tab 5. Overte ze funkce zobrazi "Zadejte cislo ukolu, ktery chcete \tab odstranit:"\par
+\tab 6. Zadejte cislo 2\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 O\f1\'e8ek\f0\'e1van\'fd v\'fdsledek: Funkce odstranit_ukol() zobrazi "Ukol 'nazev2' byl odstran\f1\'ecn!\f0\lang1033 "\lang9\par
+{\pntext\f2\'B7\tab}Skute\f1\'e8n\f0\'fd v\'fdsledek: Funkce zobrazila ze ukol "nazev2" je odstranen\par
+{\pntext\f2\'B7\tab}Stav: Pass\par
+{\pntext\f2\'B7\tab}Pozn\'e1mky: Tento p\f1\'f8\f0\'edpad ukazuje ze funkce odstraneni ukolu funguje pro ukoly ktere nejsou prvni v poradi, a funguje spravne podle cislo vybraneho ukolu.\par
+
+\pard\sa200\sl276\slmult1\par
+TC03: Odstranit neexistujici ukol v seznamu\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Popis: \lang1033 Overeni pokus odstraneni neexistujiciho ukolu\lang9\par
+{\pntext\f2\'B7\tab}Vstupn\'ed podm\'ednky: Funkce 3. Odstranit_ukol se spusti a zobrazi "Seznam ukolu:" a vsechny ulozene ukoly\par
+
+\pard\sa200\sl276\slmult1 Seznam ukolu:\par
+1. nazev1 - popis1\par
+Zadejte cislo ukolu, ktery chcete odstranit:\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 Kroky testu: \par
+
+\pard\sa200\sl276\slmult1\tab 1. Spus\f1\'9dte program.\par
+\f0\lang1033\tab\f1\lang9 2. Ov\'ec\'f8te, \'9ee se zobrazuje hlavn\f0\'ed menu s nab\'eddkou voleb (nap\f1\'f8. "1 - \f0\lang1033\tab\f1\lang9 P\'f8idat \f0\'fakol", "2 - Zobrazit \'fakoly" atd.).\par
+ \tab 3. Zadejte \f1\'e8\f0\'edslo 3 a potvr\f1\'efte stisknut\f0\'edm kl\'e1vesy Enter.\par
+\tab 4. Overte zda funkce zobrazi seznam ukolu a ukol 1.nazev1-popis1\par
+\tab 5. Overte ze funkce zobrazi "Zadejte cislo ukolu, ktery chcete \tab odstranit:"\par
+\tab 6. Zadejte cislo 2\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 O\f1\'e8ek\f0\'e1van\'fd v\'fdsledek: Funkce upozorni "Neplatna volba.Zadejte cislo mezi 1 a 1.Zadejte cislo ukolu, ktery chcete odstranit:\par
+{\pntext\f2\'B7\tab}Skute\f1\'e8n\f0\'fd v\'fdsledek: Funkce zobrazila Neplatna volba. Zadejte cislo mezi prvni a posledni ukol", ukazala moznost opakovat vyber.\par
+{\pntext\f2\'B7\tab}Stav: Pass\par
+{\pntext\f2\'B7\tab}Pozn\'e1mky: Tento p\f1\'f8\f0\'edpad ukazuje ze funkce odstraneni ukolu funguje pro neexistujici ukoly, spravne upozorni uzivatele ze ukol neexistuje a nabidla opakovani vyber.\par
+
+\pard\sa200\sl276\slmult1\par
+}
+ 

@@ -3,7 +3,7 @@ Projekt: Task manager
 Program umoznuje přidávat, zobrazovat a odstraňovat úkoly do seznam ukolu. 
 
 Technologie:
-Python 3.10
+Python 3.11.2
 
 Instalace:
 1. Naklonujte repozitář:

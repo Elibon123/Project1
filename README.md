@@ -8,11 +8,11 @@ Python 3.10
 Instalace:
 1. Naklonujte repozitář:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/Elibon123/Project1.git
    ```
 2. Přejděte do složky projektu:
    ```bash
-   cd muj-projekt
+   cd manager.py
    ```
 
    Pouziti
